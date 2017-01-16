@@ -1,0 +1,7 @@
+.DS_STORE
+.env
+node_modules/*
+utils/tmp/*
+!utils/tmp/.gitkeep
+TODO
+.idea

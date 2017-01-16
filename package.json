@@ -1,0 +1,42 @@
+{
+  "name": "courtbot-engine-data-oscn",
+  "version": "1.0.0",
+  "description": "OSCN data for courbot-engine.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-register --reporter nyan",
+    "test-watch": "mocha --require babel-register --reporter nyan --watch",
+    "build": "babel --presets es2015 src --out-dir lib",
+    "_release": "npm run test && npm build && npm version $VERSION && git push && npm publish",
+    "release:prerelease": "VERSION=prerelease npm run _release",
+    "release:patch": "VERSION=patch npm run _release",
+    "release:minor": "VERSION=minor npm run _release",
+    "release:major": "VERSION=major npm run _release"
+  },
+  "keywords": [
+    "courtbot",
+    "oscn",
+    "oklahoma"
+  ],
+  "author": "Philip Kin",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "courtbot-engine": "^1.1.0",
+    "express": "^4.14.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "log4js": "^1.1.0",
+    "node-rest-client": "^2.0.1"
+  },
+  "peerDependencies": {
+    "courtbot-engine": "^1.1.0"
+  }
+}
