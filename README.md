@@ -1,4 +1,4 @@
-# courtbot-engine-data-oscn [![Build Status](https://travis-ci.org/codefortulsa/courtbot-engine-data-oscn.svg?branch=master)](https://travis-ci.org/codefortulsa/ccourtbot-engine-data-oscn)  [![npm](https://img.shields.io/npm/v/courtbot-engine-data-oscn.svg)](https://www.npmjs.com/package/courtbot-engine-data-oscn) [![npm](https://img.shields.io/npm/dt/courtbot-engine-data-oscn.svg)](https://www.npmjs.com/package/courtbot-engine-data-oscn)
+# courtbot-engine-data-oscn [![Build Status](https://travis-ci.org/codefortulsa/courtbot-engine-data-oscn.svg?branch=master)](https://travis-ci.org/codefortulsa/ccourtbot-engine-data-oscn)  [![npm](https://img.shields.io/npm/v/courtbot-engine-data-oscn.svg?maxAge=0)](https://www.npmjs.com/package/courtbot-engine-data-oscn) [![npm](https://img.shields.io/npm/dt/courtbot-engine-data-oscn.svg?maxAge=0)](https://www.npmjs.com/package/courtbot-engine-data-oscn)
 
 This is a data source for courtbot-engine that pulls case data from oscn (Oklahoma State Court Network).
 
