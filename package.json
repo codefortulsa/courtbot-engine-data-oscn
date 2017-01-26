@@ -29,7 +29,7 @@
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "chance": "^1.0.4",
-    "courtbot-engine": "^1.1.0",
+    "courtbot-engine": "^1.3.3",
     "dirty-chai": "^1.2.2",
     "eslint": "^3.14.1",
     "express": "^4.14.0",
@@ -44,6 +44,6 @@
     "node-rest-client": "^2.0.1"
   },
   "peerDependencies": {
-    "courtbot-engine": "^1.1.0"
+    "courtbot-engine": "^1.3.3"
   }
 }
