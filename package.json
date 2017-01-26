@@ -9,7 +9,7 @@
     "build": "rm -rf lib && babel --presets es2015 src --out-dir lib",
     "release": "npm run test && npm run build && npm run lint && release && npm publish && npm run npm-badge && git add badges && git commit -m 'Update badges' && git push",
     "lint": "eslint src/ test/ --ext .js, .jsx --ignore-path .eslintignore",
-    "npm-badge": "wget https://img.shields.io/npm/v/courtbot-engine-data-oscn.svg -d badges/npm.svg"
+    "npm-badge": "wget https://img.shields.io/npm/v/courtbot-engine-data-oscn.png -d badges/npm.png"
   },
   "keywords": [
     "courtbot",
