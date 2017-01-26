@@ -7,8 +7,9 @@
     "test": "mocha",
     "test-watch": "mocha --watch",
     "build": "rm -rf lib && babel --presets es2015 src --out-dir lib",
-    "release": "npm run test && npm run build && npm run lint && release && npm publish",
-    "lint": "eslint src/ test/ --ext .js, .jsx --ignore-path .eslintignore"
+    "release": "npm run test && npm run build && npm run lint && release && npm publish && npm run npm-badge && git add badges && git commit -m 'Update badges' && git push",
+    "lint": "eslint src/ test/ --ext .js, .jsx --ignore-path .eslintignore",
+    "npm-badge": "wget https://img.shields.io/npm/v/courtbot-engine-data-oscn.svg -d badges/npm.svg"
   },
   "keywords": [
     "courtbot",
@@ -19,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codefortulsa/courtbot-engine-pg.git"
+    "url": "https://github.com/codefortulsa/courtbot-engine-data-oscn.git"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -35,6 +36,7 @@
     "express": "^4.14.0",
     "git-release": "^0.6.0",
     "mocha": "^3.2.0",
+    "node-wget": "^0.4.2",
     "proxyquire": "^1.7.10",
     "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0"
