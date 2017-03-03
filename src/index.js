@@ -15,6 +15,7 @@ export default function(county, oscnApiUrl) {
         if(!data.defendants || data.defendants.length == 0) {
           log.info(`No defendants found in ${county} county for case number ${casenumber}`);
           resolve([]);
+          return;
         }
         resolve(data.defendants);
       });
@@ -27,6 +28,7 @@ export default function(county, oscnApiUrl) {
         if(data.length != 1 || !data[0].events) {
           log.info(`No events found in ${county} county for case number ${casenumber} and party ${party}`);
           resolve([]);
+          return;
         }
         resolve(data[0].events);
       });
