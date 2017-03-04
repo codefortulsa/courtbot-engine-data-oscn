@@ -1,6 +1,6 @@
 {
   "name": "courtbot-engine-data-oscn",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "OSCN data for courbot-engine.",
   "main": "index.js",
   "scripts": {
