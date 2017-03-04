@@ -24,8 +24,11 @@ export default function(county, oscnApiUrl) {
 
   events.on("retrieve-party-events", (casenumber, party, result) => {
     result.promises.push(new Promise(function(resolve) {
-      client.get(`${oscnApiUrl}/case/${county}/${casenumber}/${party}`, function(data) {
-        if(data.length != 1 || !data[0].events) {
+      const url = `${oscnApiUrl}/case/${county}/${casenumber}/${party}`;
+      log.debug(`Attempting to retrieve events for casenumber ${casenumber} and party ${party}`);
+      log.debug(`using url: ${url}`)
+      client.get(url, function(data) {
+        if(data.length != 1 || !data[0] || !data[0].events) {
           log.info(`No events found in ${county} county for case number ${casenumber} and party ${party}`);
           resolve([]);
           return;
